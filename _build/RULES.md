@@ -16,7 +16,7 @@ Set by Muddassir on November 6, 2026.
 Copy lives in `_build/build.py`. Change it, run it, and all pages update. Do not edit the generated HTML.
 
 ## Go-live status
-Done November 7, 2026, except the www record in step 3. www.retentionrules.com still points at Substack and fails. GoDaddy asks for a new email code on every DNS save, so warn him first. Current rollback values: ../retentionrules-dns-snapshot-2026-11-07.txt.
+Done November 7, 2026. One gap: the www DNS record points to GitHub and http://www redirects to the main domain, but the GitHub certificate covers only retentionrules.com, so https://www fails. Removing and re-adding the Pages domain twice did not add www. GoDaddy asks for a new email code on every DNS save, so warn him first. Rollback values from before the move: ../retentionrules-dns-snapshot-2026-11-07.txt.
 
 ## Go-live order used (needs his OK at each step)
 1. Push this repo (Muddassir91/retentionrules-apex). DNS still points at GoDaddy, so nothing shows yet.
