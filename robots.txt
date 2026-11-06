@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://retentionrules.com/sitemap.xml
