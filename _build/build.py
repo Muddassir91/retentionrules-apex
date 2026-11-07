@@ -288,7 +288,7 @@ HOME = hero(
     '<div class="split"><div><span class="label">The proof</span><h2>Do not take my word for it. <em>Read the Slack message.</em></h2>'
     + ps("Olly at Passion.io sent me these numbers from his team.",
          "$2.4M+ in email revenue. Revenue per lead doubled. A record Black Friday.",
-         "Every number on this site has a screen like this one behind it.")
+         "The biggest numbers on this site have a screen like this one behind them.")
     + "</div>" + shot("olly-kpis.jpg", OLLY_ALT, "The start of the message. See all of it in the case study.") + "</div>", "panel"
 ) + sec(
     head("The problem", "Buying more ads is <em>the costly fix.</em>", "Sales dip, so the business buys more traffic. The leak stays open.")
