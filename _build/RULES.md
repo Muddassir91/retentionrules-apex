@@ -3,12 +3,18 @@
 Set by Muddassir on November 6, 2026.
 
 ## Copy and design
+- Design system comes from flows.retentionrules.com: Inter Display, one italic Instrument Serif phrase per headline, teal and mint, centred section openers. Set November 7, 2026.
+- Every claim shows proof. Case studies carry real screenshots, and numbers match the screenshot exactly (total email revenue $2,442,707, not $2.5M). The overall total is $4M+. Never $40M.
+- This site may show real client names and logos. Social posts still may not. Set November 7, 2026.
+- Only use testimonials that have a screenshot. Only use real logo files or plain text wordmarks. Never call an email sample his work until he confirms it.
+- Page order: hero, trust, proof, problem, method, cases, testimonials, fit, FAQ, CTA. Case studies: result, client, problem, fix, result, proof, next step.
 - Brand first. No big photos of him. Only a small round photo next to the story.
 - Only story facts that relate to the work. The 2022 debt story stays off the site.
-- Looks like an agency without saying so. Never name a client. Never show the commission rate.
+- Looks like an agency without saying so. Never show the commission rate.
 - White space between every sentence. Clear readable messaging comes before any effect. No animation.
 - One page, one type of CTA. Home and Case Studies route to further pages. Inner pages book a call. Ecommerce goes to flows.retentionrules.com, whose page is not edited unless he asks.
 - Before each routing button, one or two lines call out the buyer in their own words (SaaS: churn. Ecommerce: email share of revenue. Coaches: money from existing subscribers). The button names the fix. Never a label like "See SaaS".
+- Routing choices are three fully clickable cards, never a row of buttons with a shared headline. Each card lets the reader self-identify first ("I run a SaaS"), then names the problem in their words. Set by him on November 7, 2026.
 - Every page must pass the copy gate. `python3 _build/build.py` checks the grade.
 - Story template: Pixar Story Spine, from storytelling-lecture.html.
 
