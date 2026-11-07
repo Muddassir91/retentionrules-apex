@@ -275,3 +275,45 @@ a.case:hover { border-color: var(--bright); }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Buttons: raised and pressable, modelled on dropkickcopy.com. Cards: flat, ruled, no shadows. Set November 7, 2026. */
+.btn, .door .go {
+  min-height: 52px;
+  padding: 12px 31px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  background: var(--teal);
+  color: #fff;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+.btn:hover, .door:hover .go { background: #128a80; }
+.btn:active, .door:active .go { border-bottom-width: 2px; transform: translateY(2px); }
+.nav a.btn { min-height: 42px; padding: 8px 16px; font-size: 13px; }
+
+.door, .card, .col, .chart, .case, .stat {
+  border: 0;
+  border-top: 3px solid var(--ink);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.door, .card, .col, .chart { padding: 22px 0 0; }
+.stat { padding: 20px 8px 0; }
+.door:hover { border-color: var(--teal); box-shadow: none; }
+.door:hover .who { color: var(--teal); }
+.case:hover { box-shadow: none; }
+.shot .frame { border-color: rgba(16, 24, 23, 0.18); border-radius: 4px; box-shadow: none; }
+.badges span { border-radius: 4px; }
+.door .who { font-size: 26px; }
+.col.good { padding: 22px 26px 12px; border-top-color: var(--teal-dark); }
+.case .txt { padding: 20px 0 0; }
+a.case:hover { border-color: var(--teal); }
+.case .pic img { object-position: left top; }
