@@ -125,11 +125,11 @@ def door(who, prob, go, href):
 
 def doors():
     return '<div class="doors">' + door(
-        "I run a SaaS", "Losing more than 5% of your customers to churn each month?", "See how to fix churn", "/saas/"
+        "I run a SaaS", "Losing more than 5% of your customers to churn each month?", "See how it works for SaaS", "/saas/"
     ) + door(
-        "I run an ecommerce brand", "Email brings in less than 20% of your revenue?", "See how to grow email revenue", FLOWS
+        "I run an ecommerce brand", "Email brings in less than 20% of your revenue?", "See how it works for ecommerce", FLOWS
     ) + door(
-        "I'm a coach or expert", "Want more money from the subscribers you already have?", "See how to earn from your list", "/coaches/"
+        "I'm a coach or expert", "Want more money from the subscribers you already have?", "See how it works for coaches", "/coaches/"
     ) + "</div>"
 
 
