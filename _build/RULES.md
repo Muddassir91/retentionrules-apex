@@ -15,8 +15,9 @@ Set by Muddassir on November 6, 2026.
 - One page, one type of CTA. Home and Case Studies route to further pages. Inner pages book a call. Ecommerce goes to flows.retentionrules.com, whose page is not edited unless he asks.
 - Before each routing button, one or two lines call out the buyer in their own words (SaaS: churn. Ecommerce: email share of revenue. Coaches: money from existing subscribers). The button names the fix. Never a label like "See SaaS".
 - Routing choices are three fully clickable cards, never a row of buttons with a shared headline. Each card lets the reader self-identify first ("I run a SaaS"), then names the problem in their words. Set by him on November 7, 2026.
+- A button says what happens when you click it. No clever labels like "Find my leak". Set by him on November 7, 2026.
+- The founder story is his own words, about the reader and not a career timeline: doctor turned marketer, AI makes starting easy and growing hard, failure rates, retention, the sanctuary mission. Failure rates come from BLS Table 7; recheck when a new cohort is out. Set by him on November 7, 2026.
 - Every page must pass the copy gate. `python3 _build/build.py` checks the grade.
-- Story template: Pixar Story Spine, from storytelling-lecture.html.
 
 ## Editing
 Copy lives in `_build/build.py`. Change it, run it, and all pages update. Do not edit the generated HTML.

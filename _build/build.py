@@ -125,11 +125,11 @@ def door(who, prob, go, href):
 
 def doors():
     return '<div class="doors">' + door(
-        "I run a SaaS", "Losing more than 5% of your customers to churn each month?", "Fix my churn", "/saas/"
+        "I run a SaaS", "Losing more than 5% of your customers to churn each month?", "See how to fix churn", "/saas/"
     ) + door(
-        "I run an ecommerce brand", "Email brings in less than 20% of your revenue?", "Grow my email revenue", FLOWS
+        "I run an ecommerce brand", "Email brings in less than 20% of your revenue?", "See how to grow email revenue", FLOWS
     ) + door(
-        "I'm a coach or expert", "Want more money from the subscribers you already have?", "Make money from my list", "/coaches/"
+        "I'm a coach or expert", "Want more money from the subscribers you already have?", "See how to earn more from your list", "/coaches/"
     ) + "</div>"
 
 
@@ -274,11 +274,22 @@ T_AYMAN = ("upwork-ayman.png", "Verified Upwork testimonial: an 80% response rat
 
 # ---------------------------------------------------------------- HOME
 # Reader: cold, unaware. Lead: proclamation. One action: pick your business.
+STORY = (
+    "AI has made it easier than ever to start a business.",
+    "But it's harder than ever to grow and scale one.",
+    "In the US, about 22% of new businesses close within their first year. About 42% close within 3 years.",
+    "AI can't replace the things that make a business a business, like a strong retention system.",
+    "That's where Retention Rules comes in.",
+    "AI has flooded the market with loud competitors. My mission is to create a sanctuary for business owners.",
+    "We help them build better relationships and generate more revenue. We help them retain the customers they already have.",
+    '<small class="muted">Source: <a href="https://www.bls.gov/bdm/us_age_naics_00_table7.txt">US Bureau of Labor Statistics</a>. Businesses opened in the year to March 2023.</small>',
+)
+
 HOME = hero(
     "For businesses doing $250K to $1M a year",
     "Most growth comes from <em>the customers you already have.</em>",
     "You paid to get your leads and customers. Retention Rules finds the money leaking from them, then fixes it.",
-    btn("Find my leak", "#choose"),
+    btn("Choose your business", "#choose"),
     ("100% Job Success on Upwork", "Klaviyo deliverability certified", "Founded by an ex doctor"),
 ) + (
     '<section class="trust"><div class="wrap"><h2><em>$4M+</em> in tracked revenue.</h2>' + logos() + "</div></section>"
@@ -317,11 +328,11 @@ HOME = hero(
     head("What clients say", "People notice when <em>the emails get sharper.</em>")
     + wall(T_MATT, T_KIT, T_BRAIN, T_STRAT, T_COPY) + wide(T_AYMAN), "panel"
 ) + sec(
-    '<div class="founder"><img src="/images/muddassir.png" alt="Muddassir Abdur Rub" width="120" height="120"><div><h2>Why a doctor runs this.</h2>'
-    + ps("In 2018, I graduated from medical school. Doctors read the chart before they treat you.",
-         "Marketing does the opposite. So I brought the doctor's rule with me.",
-         'At Passion.io, I read the sales calls and the support tickets first. Revenue per lead went from $13 to $27.')
-    + '<strong>Muddassir Abdur Rub</strong><span class="muted">Founder. <a href="/about/">Read the full story</a></span></div></div>'
+    '<div class="founder"><img src="/images/muddassir.png" alt="Muddassir Abdur Rub" width="120" height="120"><div><h2>Message from the founder</h2>'
+    + ps("I'm a doctor turned full-time direct response marketer.", *STORY)
+    + '<p><strong>If it is getting harder to keep your customers buying from you, let&#39;s talk.</strong></p>'
+    + btn("Book a free audit call", BOOK)
+    + '<strong style="margin-top:24px">Muddassir Abdur Rub</strong><span class="muted">Founder</span></div></div>'
 ) + (
     '<section class="close"><div class="wrap"><h2>Which one <em>is you?</em></h2>' + doors() + "</div></section>"
 )
@@ -332,7 +343,7 @@ SAAS = hero(
     "For SaaS founders with a churn problem",
     '"I bought the app and then <em>never opened it again.</em>"',
     "A real SaaS customer said that. Some of your users think it too. Retention Rules finds where they drop off and writes the emails that bring them back.",
-    btn("Book a call", BOOK),
+    btn("Book a free audit call", BOOK),
     ("$2.4M+ in SaaS email revenue", "Revenue per lead doubled", "Free leak audit in 48 hours"),
 ) + logostrip() + sec(
     head("Sound familiar?", "Where <em>the money leaks.</em>", "You paid to get each of these people. Each one is still on your list.")
@@ -386,8 +397,8 @@ SAAS = hero(
     )
 ) + close(
     "Find out what your users <em>are telling you.</em>",
-    "Book a call and get 3 to 5 leaks within 48 hours.",
-    btn("Book a call", BOOK),
+    "Within 48 hours, you get a list of 3 to 5 places you are losing money.",
+    btn("Book a free audit call", BOOK),
 )
 
 # ---------------------------------------------------------------- COACHES
@@ -478,7 +489,7 @@ CASE_SAAS = hero(
     "SaaS case study: Passion.io",
     "Revenue per lead doubled <em>on the same traffic.</em>",
     "Each lead brought in $13. Two years later, each one brought in $27. Email made $2,442,707 along the way.",
-    btn("Book a call", BOOK),
+    btn("Book a free audit call", BOOK),
 ) + sec(stats(("$13 to $27", "revenue per lead, 2023 to 2025"),
               ("$2,442,707", "total email revenue"),
               ("3.5x", "email revenue from the newsletter")), "tight") + mid(
@@ -500,13 +511,13 @@ CASE_SAAS = hero(
     + "<h2>The result.</h2>" + bars("Revenue per lead", [("2023", 13, "$13"), ("2024", 20, "$20"), ("2025", 27, "$27")])
     + "<p>The traffic stayed the same. The leads became worth twice as much.</p><h2>The full message.</h2><p>Olly's team pulled every number on this page.</p>"
     + shot("olly-full.jpg", OLLY_ALT) + "<h2>What the founder said.</h2>" + shot(*T_MATT)
-) + close("Find the leak <em>in your business.</em>", "Book a call and get 3 to 5 leaks within 48 hours.", btn("Book a call", BOOK))
+) + close("Find the leak <em>in your business.</em>", "Within 48 hours, you get a list of 3 to 5 places you are losing money.", btn("Book a free audit call", BOOK))
 
 CASE_WEBINAR = hero(
     "SaaS case study: Passion.io",
     "Webinar follow up emails made <em>$1,115,407.</em>",
     "People who watch a webinar have raised a hand. The emails after it are where the sale closes. So that is where I went to work.",
-    btn("Book a call", BOOK),
+    btn("Book a free audit call", BOOK),
 ) + sec(stats(("$1,115,407", "from webinar follow up emails"), ("6x", "growth from 2023 to 2024"), ("20+", "sales calls behind the copy")), "tight") + mid(
     bars("Webinar follow up revenue", [("2023", 108094, "$108,094"), ("2024", 658024, "$658,024"), ("2025", 349289, "$349,289")], "2025 is a partial year.")
     + "<h2>How the emails ran.</h2><ul>"
@@ -520,13 +531,13 @@ CASE_WEBINAR = hero(
     "<li>Each email ran a subject line test. Weak ones got cut in the same campaign.</li></ul>"
     + shot("buyer-persona-system.png", "The buyer persona document behind the webinar emails.", "The research doc behind the emails.")
     + "<h2>The proof.</h2>" + shot("olly-full.jpg", OLLY_ALT)
-) + close("Your webinar leads <em>are still on your list.</em>", "Book a call and get 3 to 5 leaks within 48 hours.", btn("Book a call", BOOK))
+) + close("Your webinar leads <em>are still on your list.</em>", "Within 48 hours, you get a list of 3 to 5 places you are losing money.", btn("Book a free audit call", BOOK))
 
 CASE_NURTURE = hero(
     "SaaS case study: Passion.io",
     "Newsletter revenue grew <em>4x on the same list.</em>",
     "No promos. No sale dates. The list did not grow to do it. The emails changed.",
-    btn("Book a call", BOOK),
+    btn("Book a free audit call", BOOK),
 ) + sec(stats(("$9,712", "in 2023"), ("$42,423", "in 2025"), ("24", "kinds of email opening tested")), "tight") + mid(
     bars("Newsletter email revenue", [("2023", 9712, "$9,712"), ("2024", 16429, "$16,429"), ("2025", 42423, "$42,423")])
     + "<h2>The two changes.</h2><ul>"
@@ -535,7 +546,7 @@ CASE_NURTURE = hero(
     "<h2>How each email worked.</h2>" + ps("First came a story worth reading on its own. Then came a soft plug at the end.", "The product never led. It always closed.")
     + shot("nurture-email-faq.png", "A reader question email written for Passion.io.", "One of the reader question emails.")
     + "<h2>The proof.</h2>" + shot("olly-full.jpg", OLLY_ALT)
-) + close("Your newsletter could be <em>a revenue line.</em>", "Book a call and get 3 to 5 leaks within 48 hours.", btn("Book a call", BOOK))
+) + close("Your newsletter could be <em>a revenue line.</em>", "Within 48 hours, you get a list of 3 to 5 places you are losing money.", btn("Book a free audit call", BOOK))
 
 CASE_COACH = hero(
     "Coaches case study: Passion.io",
@@ -562,7 +573,7 @@ CASE_ECOM = hero(
     "Ecommerce case study: Psychic Sharma",
     "Same list. Same offers. <em>Opens went from 10% to 34%.</em>",
     "Psychic Sharma had a list that barely opened its emails. The writing was the one thing that changed.",
-    btn("Grow my email revenue", FLOWS),
+    btn("See the flows and price", FLOWS),
 ) + sec(stats(("10% to 34%", "top open rate"), ("Under 1% to 3%", "click rate on the best sends"), ("5", "sends in one sprint, each with a new idea")), "tight") + mid(
     bars("Top open rate", [("Before", 10, "10%"), ("After", 34, "34%")])
     + "<h2>The client.</h2>" + ps("This brand sells readings online to women aged 35 to 60.", "Many of them were tired of dating.")
@@ -573,31 +584,19 @@ CASE_ECOM = hero(
     "<li>A quiet email about the fear of being alone.</li></ul>"
     + ps("The subject lines stopped selling and started to raise a question.", "The offer came in the last third of each email.")
     + "<h2>The result.</h2>" + ps("The best sends hit a 3% click rate, up from under 1%.", "The list, the offers and the platform stayed the same.")
-) + close("Get emails that <em>bring buyers back.</em>", "See the flows, the price and the guarantee.", btn("Grow my email revenue", FLOWS))
+) + close("Get emails that <em>bring buyers back.</em>", "See the flows, the price and the guarantee.", btn("See the flows and price", FLOWS))
 
 # ---------------------------------------------------------------- ABOUT
 # Story template: Pixar Story Spine (Kenn Adams, 1991).
 ABOUT = hero(
     "The story",
-    "I left medicine in 2019. <em>One rule came with me.</em>",
-    "It is the rule behind every job at Retention Rules.",
-    btn("Book a call", BOOK),
+    "Why <em>Retention Rules exists.</em>",
+    "I'm a doctor turned full-time direct response marketer.",
+    btn("Book a free audit call", BOOK),
 ) + logostrip() + mid(
     '<div class="founder" style="margin-bottom:40px"><img src="/images/muddassir.png" alt="Muddassir Abdur Rub" width="120" height="120"><div><strong style="margin:0">Muddassir Abdur Rub</strong><span class="muted">Founder, ex doctor</span></div></div>'
     + ps(
-        "In 2018, I graduated from medical school.",
-        "Doctors live by one rule. You find out what is wrong before you treat it.",
-        "In 2019, I left medicine and went into marketing.",
-        "Marketing ran on the opposite rule. Sales dip, so the business buys more ads. Nobody checks the chart.",
-        "Then I joined Passion.io as senior copywriter.",
-        "I did what a doctor does. I read the chart.",
-        "I sat in on more than 20 sales calls. I read the support tickets. I asked the list two questions by email.",
-        "The chart pointed to one spot. The biggest money sat in the days after a webinar.",
-        "So I went to work on those emails. They brought in $1,115,407.",
-        "Because of that, each lead became worth more. Revenue per lead went from $13 to $27 on the same traffic.",
-        "In all, email brought in $2,442,707.",
-        "In April 2026, I left to build Retention Rules.",
-        "Every job here starts the same way. Read the chart. Find the leak. Then fix it.",
+        *STORY,
     ) + "<h2>The message that sums it up.</h2>" + shot("olly-full.jpg", OLLY_ALT)
 ) + sec(
     head("Fit", "Who <em>this is for.</em>")
@@ -605,7 +604,7 @@ ABOUT = hero(
               "A good fit", ["$250K to $1M a year", "SaaS, ecommerce and coaches", "A proven offer and a list"]), "panel"
 ) + sec(
     head("What clients say", "Read the <em>real reviews.</em>") + wall(T_MATT, T_KIT, T_BRAIN) + wide(T_AYMAN)
-) + close("Let's <em>read your chart.</em>", "Book a call and get 3 to 5 leaks within 48 hours.", btn("Book a call", BOOK))
+) + close("See where <em>you are losing money.</em>", "Within 48 hours, you get a list of 3 to 5 places you are losing money.", btn("Book a free audit call", BOOK))
 
 NOT_FOUND = hero(
     "Page not found",
@@ -615,7 +614,7 @@ NOT_FOUND = hero(
 
 PAGES = {
     "/": ("Retention Rules", "Most growth comes from the customers you already have. Retention Rules helps businesses at $250K to $1M a year earn more from the leads and customers they already paid for.", HOME, None),
-    "/saas/": ("Retention for SaaS", "Retention Rules finds where your SaaS users drop off and writes the emails that bring them back. Book a call and get 3 to 5 leaks within 48 hours.", SAAS, BOOK),
+    "/saas/": ("Retention for SaaS", "Retention Rules finds where your SaaS users drop off and writes the emails that bring them back. Within 48 hours, you get a list of 3 to 5 places you are losing money.", SAAS, BOOK),
     "/coaches/": ("Post-paid Promo Campaigns for Coaches", "Generate an extra $20,000 to $200,000 within 10 days with Post-paid Promo Campaigns. No retainer. No setup fee. Commission only.", COACHES, BOOK_COACH),
     "/case-studies/": ("Case Studies", "SaaS, ecommerce and coaching case studies from Retention Rules, with the numbers and the screens behind them.", CASES, None),
     "/case-studies/saas/": ("Passion.io Case Study", "How Passion.io took revenue per lead from $13 to $27 on the same traffic, with $2,442,707 in email revenue.", CASE_SAAS, BOOK),
