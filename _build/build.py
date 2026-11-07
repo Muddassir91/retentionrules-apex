@@ -129,7 +129,7 @@ def doors():
     ) + door(
         "I run an ecommerce brand", "Email brings in less than 20% of your revenue?", "See how to grow email revenue", FLOWS
     ) + door(
-        "I'm a coach or expert", "Want more money from the subscribers you already have?", "See how to earn more from your list", "/coaches/"
+        "I'm a coach or expert", "Want more money from the subscribers you already have?", "See how to earn from your list", "/coaches/"
     ) + "</div>"
 
 
